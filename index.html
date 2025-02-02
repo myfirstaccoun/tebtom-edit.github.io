@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إضافة أو حذف اسم من الورقة</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./main.js"></script>
+</head>
+<body>
+    <h2>إضافة أو حذف اسم من الورقة</h2>
+    <div class="container">
+        <form id="myForm">
+            <label for="spreadsheetSelect">اختر الورقة:</label>
+            <select id="spreadsheetSelect" name="spreadsheet">
+                <option value="الناس 1">الناس 1</option>
+                <option value="الناس 2">الناس 2</option>
+                <option value="الناس 3">الناس 3</option>
+                <option value="البقرة 1">البقرة 1</option>
+                <option value="البقرة 2">البقرة 2</option>
+                <option value="البقرة 3">البقرة 3</option>
+                <option value="البقرة 4">البقرة 4</option>
+            </select>
+            <br><br>
+            
+            <label for="nameInput">أدخل الاسم:</label>
+            <input type="text" id="nameInput" name="name" placeholder="ادخل الاسم هنا" required>
+            <br><br>
+
+            <div class="action-buttons">
+                <button type="button" class="add" onclick="submitForm('add')">إضافة</button>
+                <button type="button" class="remove" onclick="submitForm('remove')">حذف</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
