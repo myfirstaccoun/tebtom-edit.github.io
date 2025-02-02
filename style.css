@@ -19,7 +19,7 @@ h2 {
 .container {
     width: 100%;
     display: flex;
-    justify-content: center; /* لجعل العناصر في المنتصف */
+    justify-content: center;
     padding: 0;
 }
 
@@ -98,5 +98,5 @@ select:focus, input:focus {
 }
 
 input[type="text"] {
-    width: calc(100% - 24px); /* أصغر قليلاً من الحد الأدنى */
+    width: calc(100% - 24px);
 }
